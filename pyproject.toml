@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "langchain-tutorial"
+version = "0.1.0"
+description = "This is a learning tutorial."
+authors = ["Ahsanuzzaman Khan <ahsanuzzaman.khan@kulturit.no>"]
+readme = "README.md"
+packages = [{include = "langchain_tutorial"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.26.4"
+python-dotenv = "^1.0.1"
+pypdf = "^4.2.0"
+yt-dlp = "^2024.4.9"
+pydub = "^0.25.1"
+openai = "^1.26.0"
+tiktoken = "^0.6.0"
+langchain-openai = "^0.1.6"
+chromadb = "^0.5.0"
+lark = "^1.1.9"
+
+[tool.poetry.group.dev.dependencies]
+langchain = "^0.1.17"
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
